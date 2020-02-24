@@ -1,0 +1,194 @@
+article{
+    width: 600px;
+    margin-left: auto; /*Margin left and right as auto will center
+    a BLOCK level element*/
+    margin-right: auto;
+    padding: 16px; /* Spacing from top */
+}
+
+@media screen and (min-width: 500px){
+    /* Always do min width becasue most people use there PHONES */
+    /* IMPORTANT to do for every code in beginning */
+}
+footer{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px -10px 0px;
+}
+
+h1{
+    text-align: center; /* Centers your text */
+}
+
+h2, h1{
+    font-family: 'Calibri', 'Gill Sans';
+    margin-left: auto; 
+    margin-right: auto;
+    color: blue;
+}
+
+h3,h4,h5{
+    font-family: 'Gill Sans', 'Gill Sans MT'
+}
+/* Needed to hide texts, used for social media links in this case */
+.screen-reader-text {
+    border: 0;
+    clip: ClientRect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important
+}
+
+.screen-reader-text:focus {
+    background-color: #eee;
+    clip: auto !important;
+    clip-path: none;
+    color: #444;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar. */
+  }
+
+
+nav{ /* Auto centre the width, states how large the margin and width should be Changes the color of the navigation to salmon, changes font*/
+    /* */
+    font-family: sans-serif;
+    width: auto;
+    max-width: 600px;
+    background-color: #eeeeee;
+    margin: 16px auto; 
+    font-weight: bold;
+    text-align: center;
+}
+
+nav ul { /* Centers the navigation text, removes any padding */
+    text-align: center;
+    padding: 0px;
+    list-style-type: none;
+    display: inline; /* Makes Navi horizontal instead of vertical */
+    overflow: hidden;
+}
+
+nav ul li { /* Removes the bullet points from navigation */ 
+    display: inline-block;
+}
+
+nav ul li a { /* Makes a block look */
+    text-decoration: none; /* Disables the underline */
+    padding: 16px;
+    display: block;
+    /* 16 px padding top and bottom, 32px padding left and right */
+}
+
+nav ul li a:hover, nav u li a:focus, nav u li a:active {
+    /* Hover adds big box highlighting over it when mouse goves over it*/
+    /* Focus is when you press tab key it will highlight */
+    background: rgb(50,50,50);
+    color: #eeeeee
+}
+
+.overflow-hidden {
+    overflow: hidden;
+    height: 35px; 
+}
+
+.overflow-scroll {
+    overflow: scroll;
+    height: 35 px; 
+}
+
+#summarylist { 
+    display: inline-block;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgb(33, 33, 33); /* There are a few ways to do color... */
+    background-color: #eeeeee; /* Background color of the paragraph */
+    padding: 5px;
+}
+
+p{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgb(33, 33, 33); /* There are a few ways to do color... */
+    background-color: #eeeeee; /* Background color of the paragraph */
+}
+
+#Summary{
+    padding: 0px;
+    margin-top: -20px;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-left: auto;
+    /* Can also margin: -20, 0, 25, 0; */
+} 
+
+.logo{
+    float: left; 
+    margin: 0px 16px 16px 5px;
+}
+
+.logoMD{
+    float: left; 
+    margin: 8px 16px 16px 5px;
+}
+
+.logoGoogle, .logoInvista{
+    float: left; 
+    margin: 24px 16px 16px 5px;
+}
+
+
+#cn{
+     padding: 5px;
+     float: left;
+     margin: 40px 8px 35px 5px;
+}
+
+body { 
+    background-image: url(../multi-pageResume/img/geometric-pattern-seamless-white-texture-vector-13747990.jpg);
+    background-size: cover; /*Covers whole element */
+    background-repeat: no-repeat; /* Won't loop or repeat */
+    background-position: center; 
+    /* Can also be coordinates 50px 75px */
+    background-attachment: fixed;
+}
+
+#social-media-links {
+    list-style: none;
+    text-align: center; 
+}
+
+#social-media-links > li {
+    /* Direct childer selector ">" the LI must be DIRECTLY inside the element wit hthe "social-media-links" id in this case. */
+    display: inline-block;
+    padding: 15px;
+}
+
+#social-media-links .fab {
+    color: rgba( 50, 50, 50, 25); /* RGBA - the 'a' stands for ALPHA channel. */ 
+    /* For alpha = 1 opaque; 0 = transparent; */
+    font-size: 32px;
+    /* Changes the icons to any color you want in this case gray */
+}
+
+#social-media-links a:hover .fab,
+#social-meada-links a:focus .fab,
+#social-media-links a:active .fab { /* Pseudo-selector with nesting. */ 
+    color:rgba(50, 230, 240, 1);
+    /* Will hover with that color not */
+}

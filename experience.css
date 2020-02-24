@@ -1,0 +1,22 @@
+h1{
+    padding: 0px;
+    margin-bottom: -15px;
+}
+
+h2{
+    padding: 0px;
+    margin-top: -20px;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-left: auto;
+    /* Can also margin: -20, 0, 25, 0; */
+} 
+
+h3,h4,h5{
+    padding: 0px;
+    margin-top: -10px;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-left: auto;
+    /* Can also margin: -20, 0, 25, 0; */
+} 

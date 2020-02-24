@@ -1,0 +1,19 @@
+.Uofaed{
+    padding: 0px;
+    margin-bottom: -15px;
+}
+
+
+#Education{
+    padding: 0px;
+    margin-top: -20px;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-left: auto;
+    /* Can also margin: -20, 0, 25, 0; */
+} 
+
+.logo2{
+    float: right; 
+    margin: 0px 16px 16px 0px;
+}
